@@ -1,10 +1,16 @@
 
 import './App.css';
+import {useState} from "react";
+import Tempapp from "./Component/Tempapp";
 
 function App() {
+    const [city,setCity]=useState()
+
   return (
-   <div>
-     <h1>Let's Build a Weather App</h1>
+   <div className="App">
+
+       <Tempapp />
+
    </div>
   );
 }
